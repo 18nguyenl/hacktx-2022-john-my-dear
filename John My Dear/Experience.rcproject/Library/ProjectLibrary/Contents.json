@@ -1,3 +1,17 @@
 [
-
+  {
+    "libraryIdentifier" : "75ec308684984c0d6f3457509d8f216b",
+    "format" : "model",
+    "displayName" : "deer_full_body.usdz"
+  },
+  {
+    "libraryIdentifier" : "a45d9f23a782765e84617fe9bc9c0243",
+    "format" : "model",
+    "displayName" : "LEGO_Technic_42136_John_Deere_9620R_Tractor.usdz"
+  },
+  {
+    "libraryIdentifier" : "4ee5079d6e85d3ba08137d44ac70f258",
+    "format" : "model",
+    "displayName" : "peony_ed_vc.usdz"
+  }
 ]

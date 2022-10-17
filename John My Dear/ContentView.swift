@@ -10,7 +10,7 @@ import RealityKit
 
 struct ContentView : View {
     var body: some View {
-        ARViewContainer().edgesIgnoringSafeArea(.all)
+            ARViewContainer().edgesIgnoringSafeArea(.all)
     }
 }
 
@@ -22,16 +22,25 @@ struct ARViewContainer: UIViewRepresentable {
         
         // Load the "Box" scene from the "Experience" Reality File
         let boxAnchor = try! Experience.loadBox()
+//        let secondBoxAnchor = try! SecondExperience.loadBox()
+//        if let boxScene = try? Experience.loadBox() {
+//            let box = boxScene.steelBox
+////            box?.transform.scale *= 10000
+//        }
+        
         
         // Add the box anchor to the scene
         arView.scene.anchors.append(boxAnchor)
+//        arView.scene.anchors.append(secondBoxAnchor)
+//        if let box = arView.scene.findEntity(named: "Steel Box") {
+//            let anim = FromToByAnimation(from: 1, to: 10, duration: 10, bindTarget: .transform)
+//        }
+        
         
         return arView
-        
     }
     
     func updateUIView(_ uiView: ARView, context: Context) {}
-    
 }
 
 #if DEBUG
